@@ -68,6 +68,18 @@ header .contact-us{
     left: 25%;
     right: 25%;
 }
+.heroButtons{
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+.heroButtons a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: #014D4E;
+}
+
 
 .heroInfo p{
     text-align: center;

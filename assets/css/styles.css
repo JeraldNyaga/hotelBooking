@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: #D4AF37;
+}
+nav{
+    height: fit-content;
+}
+nav ul{
+    display: flex;
+}
+.logo{
+    display: flex;
+}
+p .spanM{
+    font-size: 1.5rem;
+}
+.logo img{
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    margin: 0.5rem 0;
+}
+
+.logo p{
+    text-align: center;
+    margin: 0.4rem 0.2rem 0 0.2rem;
+    font-size: 0.7rem;
+    height: fit-content;
+    color: #36454F;
+}
+.nav-bar li{
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+.nav-bar li a, header .contact-us a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #F5F5F5;
+}
+header .contact-us{
+    margin-top: 0.5rem;
+    height: fit-content;
+}
+
+.heroImg{
+    position: relative;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+}
+.heroInfo{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+}
+
+.heroInfo p{
+    text-align: center;
+}
+
+.heroInfo p, .heroInfo a{
+    color: #F5F5F5;
+}
+
+footer{
+    background-color: #014D4E;
+}

@@ -207,9 +207,6 @@ footer img{
     text-decoration: none;
     color: #F5F5F5;
 }
-.hidden{
-    display: none;
-}
 .hotelsAvailable .bookingImg{
     width: 420px;
     height: 380px;
@@ -219,9 +216,6 @@ footer img{
     justify-content: center;
     gap: 2rem;
 }
-.descriptionBooking figcaption{
-    text-align: left;
-}
 .caroBookImg{
     height: 50vh;
     width: auto;
@@ -229,11 +223,19 @@ footer img{
 .hotelBookingFeatures{
     margin: 2rem 0;
 }
-
 .hotelButtons{
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
     margin: 1.5rem 0;
+}
+.bookingFigure p{
+    width: 80%;
+}
+.descriptionBooking figcaption{
+    text-align: left;
+}
+.hidden{
+    display: none;
 }

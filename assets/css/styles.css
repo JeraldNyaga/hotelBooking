@@ -229,3 +229,11 @@ footer img{
 .hotelBookingFeatures{
     margin: 2rem 0;
 }
+
+.hotelButtons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}

@@ -1,3 +1,7 @@
+function displayHotel(){
+    
+}
+
 class Hotel {
   constructor(name) {
     this.name = name;

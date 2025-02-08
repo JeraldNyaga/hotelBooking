@@ -15,7 +15,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script defer src="./scripts/index2.js"></script>
+  <script defer type="module" src="./scripts/index.js"></script>
   <title>Hotel Booking</title>
 </head>
 
@@ -44,17 +44,17 @@
           Kasongo, where dreams meet Murima.
         </p>
         <div class="heroButtons">
-          <button class="book" id="book" onclick="showNameForm()">Book Today</button>
+          <button class="book" id="bookingBut">Book Today</button>
           <a class="contactUsButton" href="">Contact Us</a>
         </div>
-        <div id="show" class="logo formName hidden">
+        <div id="showBookForm" class="logo formName hidden">
           <div class="logoForm">
             <img src="./assets/images/icon.png" alt="">
           </div>
-          <form action="./booking.html">
-            <label for="Enter Name:">Enter Your Name:</label>
-            <input type="text"><br>
-            <button type="submit" class="btn btn-success">Submit</button>
+          <form id="userNameForm" action="./booking.html">
+            <label for="enterName">Enter Your Name:</label>
+            <input id="enterName" type="text" required><br>
+            <button id="nameSubBut" type="submit" class="btn btn-success" name="Submit">Submit</button>
           </form>
         </div>
       </div>

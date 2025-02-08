@@ -1,46 +1,36 @@
-function displayHotel() {
+document.addEventListener("DOMContentLoaded", function () {
   let mtKenya = document.getElementById("mtKenyaBut");
   let mtElgon = document.getElementById("mtElgonBut");
   let mtKasongo = document.getElementById("mtKasongoBut");
+  let userForm =   document.getElementById("userNameForm");
+  let bookingBut =  document.getElementById("bookingBut");
 
-  mtKenya.addEventListener("click", () => {
+  function funMtKenya() {
     document.getElementById("mtElgonRes").classList.add("hidden");
     document.getElementById("mtKasongoRes").classList.add("hidden");
     document.getElementById("mtKenyaRes").classList.remove("hidden");
-  });
-  mtElgon.addEventListener("click", () => {
+  }
+  function funMtElgon() {
     document.getElementById("mtKenyaRes").classList.add("hidden");
     document.getElementById("mtKasongoRes").classList.add("hidden");
     document.getElementById("mtElgonRes").classList.remove("hidden");
-  });
-  mtKasongo.addEventListener("click", () => {
+  }
+  function funMtKasongo() {
     document.getElementById("mtKenyaRes").classList.add("hidden");
     document.getElementById("mtElgonRes").classList.add("hidden");
     document.getElementById("mtKasongoRes").classList.remove("hidden");
-  });
-}
-
-displayHotel();
-class Hotel {
-  constructor(name) {
-    this.name = name;
+  }
+  function showNameForm() {
+    document.getElementById("showBookForm").classList.toggle("hidden");
+  }
+  function getNameUser() {
+    let userName = document.getElementById("enterName").value;
+    return userName;
   }
 
-  getName() {
-    return this.name;
-  }
-}
-
-class HotelFeatures {
-  constructor(bedSize, bathType, concierge) {
-    this.bedSize = bedSize;
-    this.bathType = bathType;
-    this.concierge = concierge;
-  }
-}
-
-class Guest {}
-
-class GuestHotelBooking {}
-
-let novotelHotel = new Hotel("Novotel");
+  if (mtKenya) mtKenya.addEventListener("click", funMtKenya);
+  if (mtElgon) mtElgon.addEventListener("click", funMtElgon);
+  if (mtKasongo) mtKasongo.addEventListener("click", funMtKasongo);
+  if(userForm) userForm.addEventListener("submit", getNameUser);
+  if (bookingBut) bookingBut.addEventListener("click", showNameForm);
+});

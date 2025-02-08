@@ -1,8 +1,21 @@
+let dayIn = document.getElementById("checkInDate");
+let dayOut = document.getElementById("checkOutDate");
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("checkInDate").min = new Date()
-    .toISOString()
-    .split("T")[0];
-  document.getElementById("checkOutDate").min = new Date()
-    .toISOString()
-    .split("T")[0];
+
+  if (dayIn) {
+    let today = new Date().toISOString().split("T")[0];
+    dateIn.setAttribute("min", today);
+    dayOut.setAttribute("min", today);
+  }
 });
+// function calculateDatesSpent(){
+
+// }
+
+// dayIn.addEventListener("click", () => {
+//   console.log(getElementById("checkInDate").value);
+// });
+// dayOut.addEventListener("click", () => {
+//   console.log(getElementById("checkInDate").value);
+// });

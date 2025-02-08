@@ -15,7 +15,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script defer type="module" src="./scripts/index.js"></script>
+    <script defer src="./scripts/index.js"></script>
+    <script derfer src="./scripts/booking.js"></script>
     <title>Booking</title>
 </head>
 
@@ -33,21 +34,36 @@
             </ul>
         </nav>
         <div class="contact-us contactUsButton">
-            <a href="">Contact Us</a>
+            <a href="./feedback.html">Contact Us</a>
         </div>
     </header>
     <main>
         <section class="form">
-            <div>
-                <form action="">
-                    <label for="hotelChosen">Choose your hotel of stay:</label>
-                    <input id="hotelChosen" type="text">
-                    <label for="">Check in date:</label>
-                    <input type="text">
-                    <label for="">Checkout date</label>
-                    <input type="text">
-                    <input type="submit" name="Submit" id="submitBtn">
-                    <input type="reset" name="Reset" id="resetBtn">
+            <div class="container">
+                <form action="" id="" class="checkingInForm">
+                    <div>
+                        <label for="hotelChosen">Choose your hotel of stay:</label>
+                        <br>
+                        <select id="hotelChosen" name="hotelChosen">
+                            <option value="Mt.Kenya">Mt. Kenya Resort</option>
+                            <option value="Mt.Elgon">Mt. Elgon Resort</option>
+                            <option value="Mt.Kasongo">Mt. Kasongo Resort</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Check in date:</label>
+                        <br>
+                        <input id="checkInDate" type="date">
+                    </div>
+                    <div>
+                        <label for="">Checkout date</label>
+                        <br>
+                        <input id="checkOutDate" type="date">
+                    </div>
+                    <div>
+                        <input type="submit" name="Submit" id="submitBtn">
+                        <input type="reset" name="Reset" id="resetBtn">
+                    </div>
                 </form>
             </div>
         </section>

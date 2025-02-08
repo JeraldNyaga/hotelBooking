@@ -327,3 +327,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .formFeedback{
   width: 100%;
 }
+.feedbackMain{
+  height: 100vh;
+  position: relative;
+}
+.form-div{
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: 0;;
+}

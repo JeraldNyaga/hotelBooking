@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     let userName = document.getElementById("enterName").value;
     localStorage.setItem("savedName", userName);
-    window.location.href = "../booking.html";
+    window.location.href = "./booking.html";
   }
   if (mtKenya) mtKenya.addEventListener("click", funMtKenya);
   if (mtElgon) mtElgon.addEventListener("click", funMtElgon);

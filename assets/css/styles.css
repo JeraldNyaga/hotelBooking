@@ -321,3 +321,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .checkingInForm input[type="reset"]{
   background-color: red;
 }
+.feedbackForm{
+  width: 80%;
+}
+.formFeedback{
+  width: 100%;
+}
